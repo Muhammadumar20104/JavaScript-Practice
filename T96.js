@@ -1,16 +1,19 @@
-var arr = [1, 2, 5, 6, 7, 2, 3, 5]
 function Duplicate(arr) {
     var arr2 = [];
     var arr3 = [];
+
     for (let i = 0; i < arr.length; i++) {
-        arr2.push(arr[i])
-    }
-    for (let j = 0; j < arr2.length; j++) {
-        if (arr=== arr2[j]) {
+        if (!arr2.includes(arr[i])) {
+            arr2.push(arr[i]);
+        }
+        else{
             arr3.push(arr[i])
         }
     }
-
-    return arr3
+    return arr3;
 }
-console.log(Duplicate(arr))
+var arr = [5, 'the', 7, 3, 5, 10];
+console.log(Duplicate(arr)); 
+!function(){
+    console.log("ok")
+}()
