@@ -12,6 +12,27 @@ copy me changes hote hai
 
 // Array, Objects,Functions ye sare Non Primintive ya phir Reference type ho te hai 
 
-const arr=[1,2,3,4,5]
-console.log(typeof arr);
+// const arr=[1,2,3,4,5]
+// console.log(typeof arr);
 
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Humare Pass 2 types ki memory hoti hai
+// 1 Stack memory jise hum (primitive) kah te hai 
+// 2 Heap Memory jise hum (Non primitive) kah te hai 
+
+// Stack 
+
+// let Name="Umar"
+// let otherName=Name
+// otherName="M.umar"
+// console.log(Name);
+// console.log(otherName);
+
+// Heap 
+let obj={name:"Umar"}
+let obj1=obj
+obj1.name="M.umar"
+console.log(obj);
+console.log(obj1);
